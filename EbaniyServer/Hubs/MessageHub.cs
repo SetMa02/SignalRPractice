@@ -1,13 +1,16 @@
 ﻿using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
 
 namespace EbaniyServer.Hubs
 {
+    [Authorize]
     public class MessageHub : Hub<IMessageClient>
     {
+        [Authorize(Policy = "MyPolicy")]
         public Task SendToOthers(Message message)
         {
-            var messageForClient = NewMessage.Create(Context.Items["Name"] as string, message);
+            var messageForClient = NewMessage.Create(Context.UserIdentifier, message);
             return Clients.Others.Send(messageForClient);
         }
 
@@ -29,5 +32,6 @@ namespace EbaniyServer.Hubs
 
             return Task.FromResult("Anonymous");
         }
+        
     }
 }

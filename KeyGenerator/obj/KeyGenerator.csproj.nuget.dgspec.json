@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\RiderProjects\\EbaniySignalR\\EbaniyServer\\EbaniyServer.csproj": {}
+    "C:\\Users\\User\\RiderProjects\\EbaniySignalR\\KeyGenerator\\KeyGenerator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\RiderProjects\\EbaniySignalR\\EbaniyServer\\EbaniyServer.csproj": {
+    "C:\\Users\\User\\RiderProjects\\EbaniySignalR\\KeyGenerator\\KeyGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\EbaniySignalR\\EbaniyServer\\EbaniyServer.csproj",
-        "projectName": "EbaniyServer",
-        "projectPath": "C:\\Users\\User\\RiderProjects\\EbaniySignalR\\EbaniyServer\\EbaniyServer.csproj",
+        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\EbaniySignalR\\KeyGenerator\\KeyGenerator.csproj",
+        "projectName": "KeyGenerator",
+        "projectPath": "C:\\Users\\User\\RiderProjects\\EbaniySignalR\\KeyGenerator\\KeyGenerator.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\RiderProjects\\EbaniySignalR\\EbaniyServer\\obj\\",
+        "outputPath": "C:\\Users\\User\\RiderProjects\\EbaniySignalR\\KeyGenerator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,16 +37,6 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            },
-            "Microsoft.IdentityModel.Tokens": {
-              "target": "Package",
-              "version": "[6.14.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -58,9 +48,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
