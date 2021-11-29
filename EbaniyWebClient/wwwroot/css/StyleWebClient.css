@@ -1,0 +1,66 @@
+﻿p {
+    margin-bottom: 0
+}
+
+.chat {
+    display: flex;
+    justify-content: space-between
+}
+
+.form-wrapper {
+    width: 30%
+}
+
+.form-wrapper .wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.login-wrapper, .message-wrapper {
+    flex-wrap: wrap;
+}
+
+.btn-wrapper {
+    width: 100%;
+    padding-top: 15px;
+}
+
+.btn-wrapper button {
+    float: right;
+    width: 30%;
+    justify-content: flex-end
+}
+
+.btn-wrapper button:last-child {
+    margin-right: 10px
+}
+
+.message-wrapper {
+    align-items: flex-start;
+}
+
+.message-wrapper label {
+    margin-right: 15px;
+    width: 10%;
+}
+
+.message-wrapper textarea {
+    width: 80%;
+}
+
+.message-wrapper button {
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+.messages-wrapper {
+    width: 65%;
+    display: block;
+}
+
+.messages-wrapper #messages-content {
+    border: 1px solid #000;
+    min-height: 500px;
+}
